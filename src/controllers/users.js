@@ -20,6 +20,8 @@ const getAllUsers = (req, res)=> {
             name: "Marta"
         }
     ]
+
+    throw new Error("Ocurrio un errror al obtener el usuario")
     res.json(users);
     
 };
